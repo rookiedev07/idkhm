@@ -1,0 +1,181 @@
+body {
+    background-color: rgb(73, 72, 72);
+    color: white;
+
+    background-image: url('https://img.freepik.com/premium-photo/noname-image-kickboxer-dark-background-concept_392761-4696.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-blend-mode: overlay;
+}
+
+::-webkit-scrollbar {
+    scrollbar-width: none;
+}
+
+h2 {
+    color: greenyellow;
+    display: inline-block;
+    margin-left: 5px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+#f {
+    color: rgb(218, 216, 216);
+}
+
+nav {
+    display: inline-block;
+}
+
+h4 {
+    float: right;
+    margin-right: 7px;
+    color: rgb(218, 216, 216);
+    transition: color 0.4s ease;
+}
+
+h4:hover {
+    color: greenyellow;
+}
+
+li {
+    display: inline-block;
+    margin-left: 3em;
+    color: rgb(218, 216, 216);
+    transition: color 0.4s ease;
+}
+
+li:hover {
+    color: greenyellow;
+}
+
+.quotes {
+    height: 200px;
+    width: 470px;
+    color: rgb(218, 216, 216);
+    margin-top: 8em;
+    margin-left: 4em;
+    font-size: 1.25em;
+}
+
+#quoter {
+    color: greenyellow;
+}
+
+header {
+    opacity: 0;
+    animation: fadeIn ease 3.2s forwards;
+}
+
+@keyframes fly-in-from-up {
+    from {
+        transform: translateY(-100%);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+#Re,
+#Qu {
+    animation: fly-in-from-left ease 2.2s forwards;
+}
+
+@keyframes fly-in-from-left {
+    from {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+.reminder {
+    height: 180px;
+    width: 330px;
+    text-wrap: wrap;
+    color: black;
+    background-color: greenyellow;
+    border-radius: 2.5em;
+    padding-left: 1.5em;
+    padding-right: 1.5em;
+    padding-top: 0.05em;
+    padding-bottom: 0.05em;
+    margin-top: 1em;
+    margin-left: 4em;
+    font-family: Arial, Helvetica, sans-serif;
+    display: inline-block;
+    font-style: italic;
+
+}
+
+#headingR {
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+}
+button{
+    color: black;
+    background-color: greenyellow;
+    font-size: 18px;
+    padding: 0.8em;
+    width: 13em;
+    border-radius: 0.7em;
+    float: right;
+    margin-right: 2em;
+    opacity: 0;
+    animation: fadeIn ease 3.2s forwards;
+    animation-delay: 1.7s;
+    border: 2px solid black;
+    transition-timing-function: all 0.7s ease-in-out;
+}
+button:hover{
+    color: greenyellow;
+    border: 2px solid greenyellow;
+    background-color: black;
+}
+section{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 10em;
+}
+.services{
+    height: 300px;
+    width: 450px;
+    border: 2px solid greenyellow;
+    border-radius: 2em;
+    transition: transform 0.5s;
+}
+.services p{
+    padding-top: 9em;
+}
+#serv1{
+    background-image: url('https://github.com/rookiedev07/idkhm/blob/main/NGRED-main/ASSETS/cat1.png?raw=true');
+    background-size: cover;
+}
+#serv2{
+    background-image: url('https://github.com/rookiedev07/idkhm/blob/main/NGRED-main/ASSETS/cat2.png?raw=true');
+    background-size: cover;
+}
+#serv3{
+    background-image: url('https://github.com/rookiedev07/idkhm/blob/main/NGRED-main/ASSETS/contact_form.png?raw=true');
+    background-size: cover;
+}
+.services:hover{
+    transform: scale(1.05);
+}
